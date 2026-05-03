@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const { testConnection } = require('./config/database');
 const authRoutes = require('./routes/auth');
+const electionRoutes = require('./routes/elections')
 
 require('dotenv').config();
 
@@ -16,6 +17,7 @@ testConnection();
 
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/elections', electionRoutes);
 
 // Wellcome page 
 app.get('/', (req, res) => {
