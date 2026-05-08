@@ -3,6 +3,7 @@ const cors = require('cors');
 const { testConnection } = require('./config/database');
 const authRoutes = require('./routes/auth');
 const electionRoutes = require('./routes/elections')
+const candidateRoutes = require('./routes/candidates');
 
 require('dotenv').config();
 
@@ -18,6 +19,7 @@ testConnection();
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/elections', electionRoutes);
+app.use('/api/candidates', candidateRoutes);
 
 // Wellcome page 
 app.get('/', (req, res) => {
