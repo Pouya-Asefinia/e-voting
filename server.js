@@ -4,6 +4,7 @@ const { testConnection } = require('./config/database');
 const authRoutes = require('./routes/auth');
 const electionRoutes = require('./routes/elections')
 const candidateRoutes = require('./routes/candidates');
+const voteRoutes = require('./routes/votes');
 
 require('dotenv').config();
 
@@ -20,6 +21,7 @@ testConnection();
 app.use('/api/auth', authRoutes);
 app.use('/api/elections', electionRoutes);
 app.use('/api/candidates', candidateRoutes);
+app.use('/api/votes', voteRoutes);
 
 // Wellcome page 
 app.get('/', (req, res) => {
