@@ -6,7 +6,8 @@ const electionRoutes = require('./routes/elections')
 const candidateRoutes = require('./routes/candidates');
 const voteRoutes = require('./routes/votes');
 const announcementRoutes = require('./routes/announcements')
-
+const participantRoutes = require('./routes/participants')
+ 
 require('dotenv').config();
 
 const app = express();
@@ -24,6 +25,7 @@ app.use('/api/elections', electionRoutes);
 app.use('/api/candidates', candidateRoutes);
 app.use('/api/votes', voteRoutes);
 app.use('/api/announcements', announcementRoutes);
+app.use('/api/participants', participantRoutes);
 
 // Wellcome page 
 app.get('/', (req, res) => {
