@@ -94,7 +94,7 @@ exports.getActive = async (req, res) => {
             data: announcements
         });
 
-    } catch (errro) {
+    } catch (error) {
         console.error('خطا در خواندن اعلانات', error);
         res.status(500).json({
             success: false,

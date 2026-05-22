@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Vazirmatn', Tahoma, sans-serif;
+  direction: rtl;
+}
