@@ -1,6 +1,12 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: vazir;
+  src: url(/fonts/Vazir.woff),
+       url(/fonts/Vazir.woff2); 
+}
+
 body {
-  font-family: 'Vazirmatn', Tahoma, sans-serif;
+  font-family: 'vazir', Tahoma, sans-serif;
   direction: rtl;
 }
