@@ -14,7 +14,7 @@ import AnnouncementEdit from './pages/Admin/AnnouncementEdit';
 import ParticipantManager from './pages/Admin/ParticipantManager';
 import ElectionEdit from './pages/Admin/ElectionEdit';
 import VotingPage from './pages/VotingPage';
-// import Results from './pages/Results';
+import Results from './pages/Results';
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
           <Route path="/admin/elections/:id/participants" element={<ParticipantManager />} />
           <Route path="/admin/elections/:id/edit" element={<ElectionEdit />} />
           <Route path="/vote/:id" element={<VotingPage />} />
-          {/* <Route path="/results/:id" element={<Results />} /> */}
+          <Route path="/results/:id" element={<Results />} />
         </Routes>
         <Toaster position="top-center" />
       </AuthProvider>
