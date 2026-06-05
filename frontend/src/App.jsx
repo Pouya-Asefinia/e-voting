@@ -13,7 +13,7 @@ import AnnouncementsList from './pages/Admin/AnnouncementsList';
 import AnnouncementEdit from './pages/Admin/AnnouncementEdit';
 import ParticipantManager from './pages/Admin/ParticipantManager';
 import ElectionEdit from './pages/Admin/ElectionEdit';
-// import VotingPage from './pages/VotingPage';
+import VotingPage from './pages/VotingPage';
 // import Results from './pages/Results';
 
 function App() {
@@ -31,8 +31,8 @@ function App() {
           <Route path="/admin/announcements/:id/edit" element={<AnnouncementEdit />} />
           <Route path="/admin/elections/:id/participants" element={<ParticipantManager />} />
           <Route path="/admin/elections/:id/edit" element={<ElectionEdit />} />
-          {/* <Route path="/vote/:id" element={<VotingPage />} />
-          <Route path="/results/:id" element={<Results />} /> */}
+          <Route path="/vote/:id" element={<VotingPage />} />
+          {/* <Route path="/results/:id" element={<Results />} /> */}
         </Routes>
         <Toaster position="top-center" />
       </AuthProvider>
